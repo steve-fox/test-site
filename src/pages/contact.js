@@ -1,7 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { HelmetDatoCms } from 'gatsby-source-datocms'
-import Img from 'gatsby-image'
 import Layout from "../components/layout"
 
 const Contact = ({ data: { contact } }) => (
@@ -19,7 +17,7 @@ export default Contact
 
 export const query = graphql`
   query MyQuery {
-  contactPage {
+  datoCmsContactPage {
     intro(markdown: false)
     phoneNumber
     title
