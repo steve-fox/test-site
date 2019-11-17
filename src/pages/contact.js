@@ -14,7 +14,7 @@ export default Contact
 
 export const query = graphql`
   query MyQuery {
-  datoCmsContactPage {
+  contact: datoCmsContactPage {
     phoneNumber
     title
   }
