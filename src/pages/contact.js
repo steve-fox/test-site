@@ -15,7 +15,8 @@ const Contact = ({ data: { contact } }) => (
                 <h1 className="sheet__title">{contact.title}</h1>
                 <p className="sheet__lead">{contact.intro}</p>
                 <p className="sheet__lead">{contact.phoneNumber}</p>
-                <p className="sheet__lead">{contact.location}</p>
+                <p className="sheet__lead">{contact.location.latitude}</p>
+                <p className="sheet__lead">{contact.location.longitude}</p>
 
             </div>
         </article>
@@ -30,7 +31,10 @@ export const query = graphql`
     phoneNumber
     title
     intro
-    location
+    location{
+        latitude
+        longitude
+    }
   }
 }
 `
