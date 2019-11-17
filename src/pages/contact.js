@@ -6,8 +6,18 @@ import Layout from "../components/layout"
 
 const Contact = ({ data: { contact } }) => (
 
-    <h1>hello world this is {contact.title} and my number is {contact.phoneNumber}</h1>
 
+
+    <Layout>
+        <article className="sheet">
+
+            <div className="sheet__inner">
+                <h1 className="sheet__title">{contact.title}</h1>
+                <p className="sheet__lead">{contact.phoneNumber}</p>
+
+            </div>
+        </article>
+    </Layout>
 )
 
 export default Contact
