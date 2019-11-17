@@ -5,19 +5,9 @@ import Img from 'gatsby-image'
 import Layout from "../components/layout"
 
 const Contact = ({ data: { contact } }) => (
-    <Layout>
-        <article className="sheet">
-            <HelmetDatoCms seo="" />
-            <div className="sheet__inner">
-                <h1 className="sheet__title">gdgdg</h1>
-                <p className="sheet__lead">""</p>
-                <div className="sheet__gallery">
 
-                </div>
+<h1>hello world</h1>
 
-            </div>
-        </article>
-    </Layout>
 )
 
 export default Contact
