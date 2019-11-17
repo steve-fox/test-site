@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 
 const Contact = ({ data: { contact } }) => (
 
-<h1>hello world</h1>
+    <h1>hello world this is {contact.title} and my number is {contact.phoneNumber}</h1>
 
 )
 
